@@ -37,7 +37,7 @@ void CAN_Main_Board_Init(void){
 	watchdog_on(WDT_TIME_2_1S);
 #ifdef UART_OR_TWI_INTERFACE
     //Here enable UART
-    usart_init(BAUD_RATE_28_8k);
+    usart_init(BAUD_RATE_19_2k);
     usart_enable_interrupts( );
 #else
     //Here enable TWI
